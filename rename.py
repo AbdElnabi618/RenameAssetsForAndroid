@@ -1,7 +1,9 @@
 import os
 import glob
 
-rootPathName = "/home/abd-elnabi/Downloads/Assests/Android/"
+print("Location Name Example : \nFor linux : \"/home/your_dirction_name/../assets_name_to_change/\" \nlike:\"/home/abd-elnabi/Downloads/Assests/Android/\"\nFor Windows:C:\\Users\\your_dirction_name\\..\\assets_name_to_change\\\nlike:\"C:\\Users\\Khaled Abd-Elnabi\\AndroidStudioProjects\\exampleApp\\app\\src\\main\\res\\")
+print("Location name must contain the following folders: drawable-xxxhdpi, drawable-xxhdpi, drawable-xhdpi, drawable-mdpi, drawable-ldpi,drawable-hdpi")
+rootPathName = input("Enter Location name For Assets Folder:") #"/home/abd-elnabi/Downloads/Assests/Android/"
 children = {"drawable-xxxhdpi", "drawable-xxhdpi", "drawable-xhdpi", "drawable-mdpi", "drawable-ldpi","drawable-hdpi"}
 try:
     for child in children:
